@@ -66,32 +66,35 @@ so I implemented client-side pagination using Next/Previous buttons that update 
 - Smooth transitions and responsive layout using Tailwind.
 
 ## 🧱 Project Structure
-src/
-├─ app/
-│ ├─ products/
-│ │ ├─ [id]/
-│ │ │ └─ page.tsx
-│ │ └─ page.tsx
-│ ├─ layout.tsx
-│ └─ page.tsx
-│
-├─ components/
-│ ├─ ui/
-│ ├─ products/
-│ └─ filters/
-│
-├─ lib/
-│ ├─ api/
-│ └─ types/
-│ └─ utils/
-│
-├─ hooks/
-| └─ api/
-│
-│
-└─ public/
-| └─ icons/
 
+```text
+src/
+├── app/
+│   ├── products/
+│   │   ├── [id]/
+│   │   │   └── page.tsx
+│   │   └── page.
+│   ├── not-found.tsx
+│   ├── loading.tsx
+│   ├── layout.tsx
+│   └── page.tsx
+│
+├── components/
+│   ├── ui/
+│   ├── products/
+│   └── filters/
+│
+├── lib/
+│   ├── api/
+│   ├── types/
+│   └── utils/
+│
+├── hooks/
+│   └── api/
+│
+└── public/
+    └── icons/
+```
 ---
 
 ## 🧩 Hooks & API Integration
@@ -125,11 +128,17 @@ This allows clean separation between UI logic and data fetching.
 ---
 
 
+## 🌐 Live Demo & Repository
+
+- [Live Demo on Vercel](https://mitch-design-task-nine.vercel.app/products)
+- [GitHub Repository](https://github.com/mohamedtarek45/MitchDesign-Task)
+
+
 ## 🧰 How to Run Locally
 
 ```bash
 # 1️⃣ Clone the repository
-git clone https://github.com/Mitchell-Woods/mitch-designs-task.git 
+gh  clone mohamedtarek45/MitchDesign-Task
 cd myshop
 
 # 2️⃣ Install dependencies
@@ -141,9 +150,10 @@ npm run dev
 # 4️⃣ Open in browser
 http://localhost:3000
 
+```
 ---
-👨‍💻 Author
 
+## 👨‍💻 Author
 Mohamed Tarek
 📧 mtarekmo21@gmail.com
 🔗 GitHub: mohamedtarek45
