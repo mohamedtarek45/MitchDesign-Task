@@ -11,7 +11,7 @@ const FilterSection = () => {
   return (
     <>
       <div
-  className="fixed bottom-3 right-[23px] p-[11px] bg-midnightGreen rounded-full z-5 md:hidden"
+        className="fixed bottom-3 right-[23px] p-[11px] bg-midnightGreen rounded-full z-5 md:hidden"
         onClick={() => setIsOpen((p) => !p)}
       >
         <FilterIcon className="text-white size-6" />

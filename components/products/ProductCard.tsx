@@ -11,7 +11,6 @@ import { useTransition } from "react";
 import { useRouter } from "next/navigation";
 const ProductCard = memo(({ product }: { product: Product }) => {
   const [isFavorite, setIsFavorite] = useState(false);
-  const [loaded, setLoaded] = useState(false);
   const [error, setError] = useState(false);
   const [isPending, startTransition] = useTransition();
   const router = useRouter();
@@ -28,17 +27,18 @@ const ProductCard = memo(({ product }: { product: Product }) => {
         <Image
           src={product.image}
           alt="Product"
+          className="z-1"
           fill
-          onLoadingComplete={() => setLoaded(true)}
           onError={() => {
             setError(true);
-            setLoaded(true);
           }}
         />
         {error && <ImageError />}
-        {!loaded && <LoadingComponent />}
+        <div className="absolute inset-0 bg-white z-0">
+          <LoadingComponent />
+        </div>
         <Heart
-          className={`absolute top-2 right-2  text-5xl  text-[#8F959E] hover:cursor-pointer ${
+          className={`absolute top-2 right-2 z-2  text-5xl  text-[#8F959E] hover:cursor-pointer ${
             isFavorite ? "fill-pink-400" : "fill-transparent"
           }`}
           onClick={(e) => {
@@ -63,5 +63,5 @@ const ProductCard = memo(({ product }: { product: Product }) => {
     </div>
   );
 });
-ProductCard.displayName = "ProductCard";  
+ProductCard.displayName = "ProductCard";
 export default ProductCard;
