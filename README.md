@@ -1,8 +1,8 @@
 # 🛍️ MyShop - E-commerce Product Listing & Details Page
 
-A fully functional **e-commerce product listing and details page** built as part of the **Mitch Designs Frontend Developer Task**.  
-This project focuses on pixel-perfect design implementation, API integration, state management, and clean code architecture using modern web technologies.
-
+MyShop – E-commerce Product Listing & Details Application
+A fully functional frontend and partial full-stack e-commerce application built as a technical project.
+This project focuses on pixel-perfect UI, API integration, state management, and clean code architecture using modern web technologies.
 ---
 
 ## 🚀 Tech Stack
