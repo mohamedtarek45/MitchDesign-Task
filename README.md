@@ -138,7 +138,7 @@ This allows clean separation between UI logic and data fetching.
 
 ```bash
 # 1️⃣ Clone the repository
-gh  clone mohamedtarek45/MitchDesign-Task
+git clone mohamedtarek45/MyShop
 cd myshop
 
 # 2️⃣ Install dependencies
